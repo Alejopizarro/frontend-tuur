@@ -8,15 +8,14 @@ import {
 } from "./ui/carousel";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { OutlineLocalOffer } from "@/public/offer";
-import Image from "next/image";
 
 const SummerSales = () => {
   return (
     <div className="bg-gray-200">
-      <div className="max-w-6xl  py-4 flex flex-col gap-4 mx-auto sm:py-16 sm:px-24">
+      <div className="max-w-6xl px-1 py-4 flex flex-col gap-4 mx-auto sm:py-16 sm:px-24">
         <h3 className="font-bold text-3xl">Summer offers</h3>
         <div>
-          <Carousel>
+          <Carousel className="px-8">
             <CarouselContent className="-ml-2 md:-ml-4">
               {activities.map((item) => (
                 <CarouselItem
@@ -25,7 +24,7 @@ const SummerSales = () => {
                 >
                   <Card>
                     <CardHeader>
-                      <Image
+                      <img
                         src="/header-canyoning.jpg"
                         alt="offers"
                         className=""

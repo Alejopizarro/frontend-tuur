@@ -8,7 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import Image from "next/image";
 
 export const carouselimage = [
   {
@@ -37,8 +36,8 @@ const TeamBuilding = () => {
   const [selectedImage, setSelectedImage] = useState(0);
 
   return (
-    <div className="max-w-6xl  py-4 gap-4 mx-auto sm:py-16 sm:px-24 grid sm:grid-cols-2 md:grid-cols-2">
-      <div className="max-w-2xs flex flex-col gap-y-4 sm:gap-y-16">
+    <div className="max-w-6xl px-1 py-4 gap-4 mx-auto sm:py-16 sm:px-24 grid sm:grid-cols-2 md:grid-cols-2">
+      <div className="sm:max-w-2xs flex flex-col gap-y-4 sm:gap-y-16">
         <h3 className="font-bold text-3xl">Team Building</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nostrum
@@ -55,7 +54,7 @@ const TeamBuilding = () => {
         <Carousel>
           <CarouselContent>
             <CarouselItem key={carouselimage[selectedImage].image}>
-              <Image
+              <img
                 src={`${carouselimage[selectedImage].image}`}
                 alt="team-building"
                 className="rounded-lg w-full h-64 object-cover"
@@ -72,7 +71,7 @@ const TeamBuilding = () => {
           <CarouselContent className="-ml-2">
             {carouselimage.map((image, index) => (
               <CarouselItem key={image.id} className="pl-2 basis-1/5">
-                <Image
+                <img
                   src={image.image}
                   alt="Teambuilding thumbnail"
                   className={`rounded-lg h-24 w-full object-cover cursor-pointer ${

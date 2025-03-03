@@ -40,10 +40,10 @@ const HeroSection = () => {
               }}
               className="flex flex-col justify-center items-center text-white opacity-70"
             >
-              <h1 className="text-5xl drop-shadow-xl text-black font-semibold">
+              <h1 className="text-4xl sm:text-5xl drop-shadow-xl text-black font-semibold">
                 {item.title}
               </h1>
-              <p className="text-8xl font-extralight drop-shadow-xl text-black text-ellipsis italic">
+              <p className="text-7xl sm:text-8xl font-extralight drop-shadow-xl text-black text-ellipsis italic">
                 {item.description}
               </p>
             </CarouselItem>
