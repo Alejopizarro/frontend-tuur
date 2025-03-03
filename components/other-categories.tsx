@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const categories = [
@@ -20,7 +21,7 @@ const OtherCategories = () => {
               href="/"
               className="relative h-64 max-w-xs mx-auto overflow-hidden bg-no-repeat bg-cover rounded-lg"
             >
-              <img
+              <Image
                 src={category.image}
                 alt={category.name}
                 className="max-w-[270px] h-full object-cover w-full transition duration-300 ease-in-out rounded-lg hover:scale-110"

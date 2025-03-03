@@ -2,6 +2,7 @@ import { activities } from "@/lib/data";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import Image from "next/image";
 
 const TopActivities = () => {
   return (
@@ -16,11 +17,14 @@ const TopActivities = () => {
             >
               <Card>
                 <CardHeader>
-                  <img src="/header-canyoning.jpg" alt="activite-img" />
+                  <Image src="/header-canyoning.jpg" alt="activite-img" />
                   <div className="flex gap-2">
                     {item.tag.map((tag) => (
-                      <span className="bg-gray-200 text-gray-600 font-medium text-sm rounded-lg px-3 py-1">
-                        {tag}
+                      <span
+                        key={tag.id}
+                        className="bg-gray-200 text-gray-600 font-medium text-sm rounded-lg px-3 py-1"
+                      >
+                        {tag.title}
                       </span>
                     ))}
                   </div>

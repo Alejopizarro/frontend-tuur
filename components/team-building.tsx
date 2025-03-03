@@ -8,7 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 export const carouselimage = [
   {
@@ -55,7 +55,7 @@ const TeamBuilding = () => {
         <Carousel>
           <CarouselContent>
             <CarouselItem key={carouselimage[selectedImage].image}>
-              <img
+              <Image
                 src={`${carouselimage[selectedImage].image}`}
                 alt="team-building"
                 className="rounded-lg w-full h-64 object-cover"
@@ -72,7 +72,7 @@ const TeamBuilding = () => {
           <CarouselContent className="-ml-2">
             {carouselimage.map((image, index) => (
               <CarouselItem key={image.id} className="pl-2 basis-1/5">
-                <img
+                <Image
                   src={image.image}
                   alt="Teambuilding thumbnail"
                   className={`rounded-lg h-24 w-full object-cover cursor-pointer ${

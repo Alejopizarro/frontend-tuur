@@ -7,8 +7,8 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import { TicketPercent } from "lucide-react";
 import { OutlineLocalOffer } from "@/public/offer";
+import Image from "next/image";
 
 const SummerSales = () => {
   return (
@@ -25,7 +25,7 @@ const SummerSales = () => {
                 >
                   <Card>
                     <CardHeader>
-                      <img
+                      <Image
                         src="/header-canyoning.jpg"
                         alt="offers"
                         className=""
