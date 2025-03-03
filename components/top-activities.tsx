@@ -6,7 +6,7 @@ const TopActivities = () => {
   return (
     <div className="max-w-6xl py-4 px-1 flex flex-col gap-4 mx-auto sm:py-16 sm:px-24">
       <h3 className="font-bold text-3xl">Our top activities</h3>
-      <div className="grid sm:grid-cols-3">
+      <div className="grid gap-y-4 sm:grid-cols-3">
         {activities.map((item) => (
           <div key={item.id} className="md:basis-1/2 lg:basis-1/3 ">
             <Card>
