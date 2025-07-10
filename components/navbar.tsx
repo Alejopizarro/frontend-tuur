@@ -5,7 +5,7 @@ import Lenguage from "./lenguage";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center absolute z-1000 w-full bg-transparent p-4">
+    <nav className="flex justify-between items-center absolute z-1000 w-full bg-white p-4">
       <h1 className="text-md">
         TUUR <span className="text-md font-semibold">Canyoning</span>
       </h1>

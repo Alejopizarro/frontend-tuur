@@ -15,7 +15,7 @@ const Lenguage = () => {
         <DropdownMenuTrigger>
           <FlagSpain />
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
+        <DropdownMenuContent className="z-1001">
           <DropdownMenuLabel>
             <p className="flex items-center gap-x-2">
               <FlagSpain /> Español

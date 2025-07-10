@@ -7,7 +7,7 @@ import {
   CarouselPrevious,
 } from "./ui/carousel";
 import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
-import { OutlineLocalOffer } from "@/public/offer";
+import { OfferIcon } from "@/public/offer";
 
 const SummerSales = () => {
   return (
@@ -37,7 +37,7 @@ const SummerSales = () => {
                     <CardFooter className="flex gap-2">
                       <span className="text-xl line-through">€69,00</span>
                       <span className="text-xl font-semibold">€64,00</span>
-                      <OutlineLocalOffer fill="red" />
+                      <OfferIcon fill="red" />
                     </CardFooter>
                   </Card>
                 </CarouselItem>
