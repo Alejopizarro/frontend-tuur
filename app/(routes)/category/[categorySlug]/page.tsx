@@ -10,9 +10,6 @@ export default function Page() {
   const { result, loading }: ResponseType =
     useGetCategoryProducts(categorySlug);
 
-  console.log(result, loading);
-  console.log("params: ", categorySlug);
-  console.log("excursions: ", excursion);
   return (
     <div className="max-w-6xl p-10 sm:px-24 sm:py-20">
       <h1>Canyons</h1>
@@ -20,7 +17,7 @@ export default function Page() {
         result !== null &&
         result.map((excursion: ExcursionType) => (
           <div key={excursion.id}>
-            <h2>{excursion.name}</h2>
+            <h2>{excursion.title}</h2>
             <p>{excursion.shortDescription}</p>
           </div>
         ))}

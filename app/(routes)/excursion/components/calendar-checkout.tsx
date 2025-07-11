@@ -124,12 +124,12 @@ const CalendarCheckout = ({
   };
 
   const handlePeopleChange = (value: string) => {
-    setNumberOfPeople(Number.parseInt(value));
+    const numPeople = parseInt(value, 10);
+    setNumberOfPeople(numPeople);
     setCurrentStep("calendar");
     setAvailabilityInfo(null);
     resetState();
   };
-
   const isFormValid = selectedDate && clientName.trim().length > 0;
 
   // Render según el paso actual
@@ -418,7 +418,7 @@ const CalendarCheckout = ({
                   mode="single"
                   selected={selectedDate}
                   onSelect={handleDateChange}
-                  className="rounded-lg border"
+                  className="rounded-lg border w-full p-8"
                   classNames={{
                     day_selected: "bg-teal-600 text-white hover:bg-teal-600",
                     day_today: "bg-teal-100 text-teal-900",
